@@ -1,0 +1,6 @@
+*.pyc
+.idea
+*.swp
+*.db
+local_settings.py
+media/.+

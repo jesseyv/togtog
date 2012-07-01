@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row boxed">
+            <div class="span12">
+                <a href="{% url index %}">
+                    <h1>TogTog Shop</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row boxed">
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главная</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row boxed">
+            <div class="span3">
+                <nav id="left-menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Главная</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="span9">
+                <div class="main-container">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row boxed">
+            <div class="span12">
+                <p>
+                    <a href="{% url index %}">TogTog Shop 2012</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top-link" title="Наверх">&uarr;</a>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/core.js"></script>
+
+</body>
+</html>

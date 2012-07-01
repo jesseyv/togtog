@@ -1,0 +1,10 @@
+django
+django-shop
+pillow
+sorl-thumbnail
+ipython
+South
+django-debug-toolbar
+django-sitetree
+django-extensions
+fabric
